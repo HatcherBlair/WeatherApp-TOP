@@ -93,11 +93,12 @@ function displayWeather() {
 async function getWeather(location = "84105") {
   try {
     const response = await fetch(
-      `${baseWeatherURL + weatherAPI}&q=${location}`,
+      `${baseWeatherURL + weatherAPI}&q=${location}}`,
       {
         mode: "cors",
       }
     );
+
     const weatherData = await response.json();
     const data = WeatherObject.setAll(weatherData);
     displayWeather(data);
