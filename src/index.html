@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="location"></h1>
+      <h2 class="temp-header"></h2>
+    </div>
+
+    <div class="control-panel">
+      <form class="new-location">
+        <label for="location">Location: </label>
+        <input
+          type="text"
+          id="location"
+          placeholder="Enter a City or Zip code"
+          required
+        />
+        <button type="submit">Go!</button>
+      </form>
+
+      <div class="toggle-btns">
+        <button class="toggle-temp">Switch to C</button>
+        <button class="toggle-distance">Switch to KPH</button>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="temp-box">
+        <h3>Current Temperature</h3>
+        <p class="current-temp"></p>
+        <p class="feels-like"></p>
+      </div>
+      <div class="wind-box">
+        <h3>Current Wind</h3>
+        <p class="wind-speed"></p>
+        <p class="wind-dir"></p>
+      </div>
+    </div>
+  </body>
+</html>
